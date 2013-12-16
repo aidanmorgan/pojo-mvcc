@@ -8,8 +8,6 @@ Background
 =========
 This project contains a simple in-memory Multi-version concurrency control cache for use in Java projects.
 
-For an explanation of what MVCC is this link is a nice, not-too-technical introduction.
-
 In our words: Multi-version concurrency control (MVCC) is a standard technique for avoiding conflicts between reads and writes of the same object. POJO-MVCC guarantees that each transaction sees a consistent view of the object by reading non-current data for objects modified by concurrent transactions. MVCC is a fairly common technique in database transaction implementation and is becoming more common in caching implementations.
 
 One of the benefits of a MVCC approach is that is more efficient than traditional locking implementations for sharing objects in certain situations. This library aims to provide an API that is similar to that of java.util.Map, but has MVCC features - without requiring the use of a database or the configuration of a fully-featured enterprise caching provider.
