@@ -17,12 +17,19 @@ One of the benefits of a MVCC approach is that is more efficient than traditiona
 The emphasis for this project is on simple. That being said, it has the following features:
 
 Completely in-Memory MVCC - so there is no need to start up a database, write to the file-system etc.
+
 Completely Standalone - there is no clustering, replication, domains etc. to configure. Not implemented using a database or any third-party libraries.
+
 Configurable - supports pluggable expiration of revisions, pluggable rules for resolving conflicts etc.
+
 Subversion-style API - operations are similar to subversion: refresh(), checkout(), commit(), revert(), export().
+
 Easy to use - just create a RootElementStore instance and a CacheElementFactory and you're good to go.
+
 Thread safe - allowing shared access of objects between threads. The RootElementStore is protected using read/write locks (java.util.concurrent.ReadWriteLock).
+
 Allows the creation of a object cache, and modification, addition and removal through a separate cloned copy of the cache. When the changes are to be made that can be committed back to the master-cache.
+
 
 Basically this library gives similar semantics to Subversion for POJO's.
 
@@ -30,6 +37,7 @@ See the Getting Started page to get started in four lines of code!
 
 Why
 =========
+
 This library can be used for those times when you want to keep snapshots of an object's state at certain points in time. Such uses could be providing a primitive Software Transactional Memory implementation, providing some transaction support or use as a read-cache for a web-service.
 
 In other projects we have been working on there has been a few cases where a "versioned java.util.Map could have come in real handy. Getting sick of always wishing for one, but not wanting to use a more "complete" solution (such as EHCache, JBoss Cache etc.) we sat down and implemented it.
