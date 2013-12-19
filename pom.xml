@@ -3,7 +3,7 @@
 
     <groupId>com.github.pojomvcc</groupId>
     <artifactId>pojo-mvcc</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>pojo-mvcc</name>
