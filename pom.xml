@@ -16,7 +16,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/aidanmorgan/pojo-mvcc.git</connection>
-        <developerConnection>scm:git:git@github.com:aidanmorgan/pojo-mvcc.git</developerConnection>
+        <developerConnection>scm:git:S73417H@github.com:aidanmorgan/pojo-mvcc.git</developerConnection>
         <url>http://github.com/aidanmorgan/pojo-mvcc</url>
       <tag>pojo-mvcc-1.0</tag>
   </scm>
