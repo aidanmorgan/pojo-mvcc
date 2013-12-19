@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.pojomvcc</groupId>
@@ -7,10 +8,31 @@
     <packaging>jar</packaging>
 
     <name>pojo-mvcc</name>
-    <url>http://maven.apache.org</url>
+    <description>A simple in-memory POJO Multi Version Concurrency Control (MVCC) cache.</description>
+    <url>https://github.com/aidanmorgan/pojo-mvcc</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Aidan Morgan</name>
+            <url>http://au.linkedin.com/pub/aidan-morgan/2/5b4/928/</url>
+        </developer>
+        <developer>
+            <name>Michael Fazio</name>
+            <url>http://au.linkedin.com/pub/michael-fazio/b/b20/a23/</url>
+        </developer>
+    </developers>
 
     <properties>
-        <gpg.passphrase />
+        <gpg.passphrase/>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -18,8 +40,8 @@
         <connection>scm:git:git://github.com/aidanmorgan/pojo-mvcc.git</connection>
         <developerConnection>scm:git:S73417H@github.com:aidanmorgan/pojo-mvcc.git</developerConnection>
         <url>http://github.com/aidanmorgan/pojo-mvcc</url>
-      <tag>pojo-mvcc-1.0</tag>
-  </scm>
+        <tag>default</tag>
+    </scm>
 
     <distributionManagement>
         <snapshotRepository>
